@@ -1,0 +1,146 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.logo {
+    color: white;
+    padding-left: 10px;
+    mix-blend-mode: lighten;
+    
+}
+
+nav {
+    background-color: #1A2E35;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    nav ul {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+    #image-1{
+        width: 250px;
+        text-align: center;
+    }
+    #image-2{
+    display: none;
+        
+    }
+    #image-3{
+    display: none;
+    }
+    
+}
+
+#group-2{
+    margin-top: 11px;
+    background-color: #D1E3FF;
+    height: 70vh;    
+}
+
+#image-1{
+    border-radius: 10px;
+}
+
+#image-1{
+    animation-name: glases;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glases{
+
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+#image-2{
+    animation-name: frame;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes frame{
+
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#lorm{
+    color: black;
+}
+
+#but-1{
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#umer{
+    background-color: #1A2E35;
+    height: fit-content;
+
+}
+.flex{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
